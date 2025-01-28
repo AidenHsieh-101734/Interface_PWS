@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvador Dali Museum</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <video class="backgroundvid" muted loop autoplay>
+        <source src="./resources/videos/background.mp4">
+    </video>
+    <div class="main">
+        <div class="navHeader">
+            <div>
+                <h1>Salvador Dali Museum</h1>
+            </div>
+            <br>
+            <ul class="navMenu">
+                <li><a href="#home" class="navButton activeNav">Home</a></li>
+                <li><a href="#gallery" class="navButton">Gallerij</a></li>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Meer</button>
+                    <div class="dropdown-content">
+                        <li><a href="./bestel.html#order" class="navButton">Bestel Tickets</a></li>
+                        <li><a href="https://www.boijmans.nl/" class="navButton">Bojiman's Site</a></li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <section id="home" class="landingSec">
+        <div>
+            <h2>"Intelligence without ambition is like a bird without wings." - Salvador Dali</h2>
+            <div id="quoteshot">
+                <img src="./resources/images/dali.jpg" alt="Salvador Dali">
+            </div>
+
+            <button id="landingButton" onclick="window.location.href='./bestel.html'">Koop Tickets</button>
+        </div>
+    </section>
+
+    <section id="gallery" class="landingSec">
+        <div>
+            <h2>Schilderijen</h2>
+            <p>De paar van de tientallen kunstwerken van Salvador Dali.</p>
+            <div class="art-grid">
+                <ul class="hs full">
+                    <img src="./resources/images/galatea-of-the-spheres.jpeg" class="art-item" alt="">
+                    <img src="./resources/images/dream-caused-by-the-flight-of-a-bee-around-a-pomegranate.jpeg" class="art-item" alt="">
+                    <img src="./resources/images/metamorphosis-of-narcissus.jpeg" class="art-item" alt="">
+                    <img src="./resources/images/sleep.jpeg" class="art-item" alt="">
+                    <img src="./resources/images/the-burning-giraffe.jpeg" class="art-item" alt="">
+                    <img src="./resources/images/swans-reflecting-elephants.jpeg" class="art-item" alt="">
+                    <img src="./resources/images/still-life-fast-moving.jpeg" class="art-item" alt="">
+                    <img src="./resources/images/the-temptation-of-saint-anthony.jpeg" class="art-item" alt="">
+                    <img src="./resources/images/portrait-of-paul-eluard.jpeg" class="art-item" alt="">
+                    <img src="./resources/images/qrcode.png" class="art-item" alt="">
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
