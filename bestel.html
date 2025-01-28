@@ -25,8 +25,17 @@
                 <div class="dropdown">
                     <button class="dropbtn">Meer</button>
                     <div class="dropdown-content">
-                        <li><a href="#order" class="navButton activeNav">Bestel Tickets</a></li>
-                        <li><a href="https://www.boijmans.nl/" class="navButton">Bojiman's Site</a></li>
+                        <li>
+                            <a href="#order" class="navButton activeNav">Bestel Tickets</a>
+                        </li>
+                        <div class="dropdown2">
+                            <button class="dropbtn2">Overig</button>
+                            <div class="dropdown-content2">
+                                <li>
+                                    <a href="https://www.boijmans.nl/" class="navButton">Bojiman's Site</a>
+                                </li>
+                            </div>                    
+                        </div>
                     </div>
                 </div>
             </ul>
@@ -43,17 +52,17 @@
                 </div>
 
                 <label for="email">Email*</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required>
 
                 <label>Address *</label>
-                <input type="text" placeholder="Street Address" required>
+                <input type="text" placeholder="Street Address" autocomplete="address-level1 ddress-line1" required>
                 <input type="text" placeholder="Street Address Line 2">
                 <div style="display: flex; gap: 10px;">
-                    <input type="text" placeholder="City" required>
-                    <input type="text" placeholder="Region" required>
+                    <input type="text" placeholder="City" autocomplete="address-line2" required>
+                    <input type="text" placeholder="Region" autocomplete="address-line3" required>
                 </div>
-                <input type="text" placeholder="Postal / Zip Code" required>
-                <select id="countries" required>
+                <input type="text" placeholder="Postal / Zip Code" autocomplete="postal-code" required>
+                <select id="countries" autocomplete="country-name" required>
                     <option disabled value="" selected>Choose your country..</option>
                     <option value="The Netherlands">The Netherlands</option>
                     <option value="United States">United States</option>
@@ -69,11 +78,11 @@
                     <div class="product-item">
                         <div>
                             <label for="adultT">Adult Ticket [ 18-20 ] $20.00</label>
-                            <input type="number" name="adultT" id="quantity" required min="0" max="20" value="0"
+                            <input type="number" name="adultT" id="quantityA" required min="0" max="20" value="0"
                                 placeholder="Amount.."><br>
                             <label for="kidsT">Kids Ticket [ 0-17 ] $12.00</label>
-                            <input type="number" name="kidsT" id="quantity" value="0" min="0" max="20" placeholder="Amount.."
-                                required>
+                            <input type="number" name="kidsT" id="quantityK" value="0" min="0" max="20"
+                                placeholder="Amount.." required>
                         </div>
 
                     </div>
